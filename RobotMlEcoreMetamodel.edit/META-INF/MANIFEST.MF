@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: RobotMlEcoreMetamodel.edit;singleton:=true
+Automatic-Module-Name: RobotMlEcoreMetamodel.edit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: robotMlEcoreMetamodel.provider.RobotMlEcoreMetamodelEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-22
+Export-Package: robotMlEcoreMetamodel.provider
+Require-Bundle: org.eclipse.core.runtime,
+ RobotMlEcoreMetamodel;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

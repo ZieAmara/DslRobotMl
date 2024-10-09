@@ -1,7 +1,16 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: RobotMlEcoreMetamodel
-Bundle-SymbolicName: RobotMlEcoreMetamodel; singleton:=true
+Bundle-Name: %pluginName
+Bundle-SymbolicName: RobotMlEcoreMetamodel;singleton:=true
+Automatic-Module-Name: RobotMlEcoreMetamodel
 Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-22
+Export-Package: robotMlEcoreMetamodel,
+ robotMlEcoreMetamodel.impl,
+ robotMlEcoreMetamodel.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
