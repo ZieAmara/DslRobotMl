@@ -3,56 +3,55 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="robotMlEcoreMetamodel" nsURI="http://www.example.org/robotMlEcoreMetamodel"
     nsPrefix="robotMlEcoreMetamodel">
   <eClassifiers xsi:type="ecore:EClass" name="Program">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="function" lowerBound="1"
-        upperBound="-1" eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="function" upperBound="-1"
+        eType="#//Function" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Function">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="returntype" upperBound="-1"
-        eType="#//ReturnType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="returntype" eType="#//ReturnType"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-1" eType="#//Statement"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" upperBound="-1"
         eType="#//Parameter" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NewEClass45"/>
   <eClassifiers xsi:type="ecore:EEnum" name="Unit">
     <eLiterals name="cm"/>
     <eLiterals name="mm" value="1"/>
+    <eLiterals name="m" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ReturnType">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//Type"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Statement" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Variable" eSuperTypes="#//Statement">
+  <eClassifiers xsi:type="ecore:EClass" name="VariableDecl" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valeur" lowerBound="1"
+        eType="#//Expression" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Movement" abstract="true" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="distance" lowerBound="1"
         eType="#//Expression" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ControlStructure" abstract="true" eSuperTypes="#//Statement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="booleanexpression" upperBound="-1"
-        eType="#//BooleanExpr" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-1" eType="#//BooleanExpr"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="If" eSuperTypes="#//ControlStructure">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="else" upperBound="-1" eType="#//Statement"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="else" eType="#//Statement"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="then" lowerBound="1" upperBound="-1"
-        eType="#//Statement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="then" lowerBound="1" eType="#//Statement"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Loop" eSuperTypes="#//ControlStructure">
     <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" upperBound="-1"
         eType="#//Statement" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Forward" eSuperTypes="#//Movement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RotateLeft" eSuperTypes="#//Rotation"/>
   <eClassifiers xsi:type="ecore:EClass" name="Backward" eSuperTypes="#//Movement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RotateRight" eSuperTypes="#//Rotation"/>
   <eClassifiers xsi:type="ecore:EClass" name="Right" eSuperTypes="#//Movement"/>
   <eClassifiers xsi:type="ecore:EClass" name="Left" eSuperTypes="#//Movement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Rotation" abstract="true" eSuperTypes="#//Statement"/>
   <eClassifiers xsi:type="ecore:EClass" name="SetSpeed" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="#//Unit"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="distance" lowerBound="1"
@@ -60,9 +59,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VariableAssign" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
-        eType="#//Variable"/>
+        eType="#//VariableDecl"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valeur" lowerBound="1"
+        eType="#//Expression" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Clock" eSuperTypes="#//Rotation">
+  <eClassifiers xsi:type="ecore:EClass" name="Clock" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="angle" lowerBound="1" eType="#//Expression"
         containment="true"/>
   </eClassifiers>
@@ -92,11 +93,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="EqualTo" eSuperTypes="#//BooleanOPerator"/>
   <eClassifiers xsi:type="ecore:EClass" name="Add" eSuperTypes="#//ArithmeticExpr"/>
   <eClassifiers xsi:type="ecore:EClass" name="Multiplication" eSuperTypes="#//ArithmeticExpr"/>
-  <eClassifiers xsi:type="ecore:EClass" name="NewEClass74" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Sub" eSuperTypes="#//ArithmeticExpr"/>
   <eClassifiers xsi:type="ecore:EClass" name="Division" eSuperTypes="#//ArithmeticExpr"/>
   <eClassifiers xsi:type="ecore:EEnum" name="Type">
     <eLiterals name="number"/>
     <eLiterals name="boolean" value="1"/>
+    <eLiterals name="cm" value="2"/>
+    <eLiterals name="mm" value="3"/>
+    <eLiterals name="m" value="4"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReturnExp" eSuperTypes="#//Statement"/>
 </ecore:EPackage>

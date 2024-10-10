@@ -12,10 +12,14 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="robotMlEcoreMetamodel.ecore#//Unit">
       <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Unit/cm"/>
       <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Unit/mm"/>
+      <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Unit/m"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="robotMlEcoreMetamodel.ecore#//Type">
       <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Type/number"/>
       <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Type/boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Type/cm"/>
+      <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Type/mm"/>
+      <genEnumLiterals ecoreEnumLiteral="robotMlEcoreMetamodel.ecore#//Type/m"/>
     </genEnums>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Program">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Program/function"/>
@@ -26,20 +30,20 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Function/body"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Function/parameter"/>
     </genClasses>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//NewEClass45"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ReturnType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//ReturnType/type"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Statement"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Variable">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//Variable/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//Variable/type"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//VariableDecl">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//VariableDecl/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//VariableDecl/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//VariableDecl/valeur"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Movement">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Movement/distance"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ControlStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//ControlStructure/booleanexpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//ControlStructure/body"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//If">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//If/else"/>
@@ -49,18 +53,16 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Loop/body"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Forward"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//RotateLeft"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Backward"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//RotateRight"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Right"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Left"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Rotation"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//SetSpeed">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//SetSpeed/unit"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//SetSpeed/distance"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//VariableAssign">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//VariableAssign/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//VariableAssign/valeur"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Clock">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Clock/angle"/>
@@ -86,8 +88,8 @@
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//EqualTo"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Add"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Multiplication"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//NewEClass74"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Sub"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Division"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ReturnExp"/>
   </genPackages>
 </genmodel:GenModel>
