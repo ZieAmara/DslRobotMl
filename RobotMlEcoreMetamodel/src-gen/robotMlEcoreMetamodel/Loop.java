@@ -28,7 +28,7 @@ public interface Loop extends ControlStructure {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Body</em>' containment reference list.
 	 * @see robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage#getLoop_Body()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Statement> getBody();

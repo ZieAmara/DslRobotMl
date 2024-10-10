@@ -43,7 +43,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//Movement/distance"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ControlStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//ControlStructure/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//ControlStructure/condition"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//If">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//If/else"/>
@@ -70,7 +70,7 @@
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Expression"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//FunctionCall">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//FunctionCall/function"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//FunctionCall/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//FunctionCall/arguments"/>
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Parameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotMlEcoreMetamodel.ecore#//Parameter/name"/>
@@ -83,13 +83,38 @@
     </genClasses>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ArithmeticExpr"/>
     <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//BooleanOPerator"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//LowerThan"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//UpperThan"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//EqualTo"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Add"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Multiplication"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Sub"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Division"/>
-    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ReturnExp"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ReturnExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//ReturnExp/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//ExpressionUnair"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//FunctionCallExpr">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//FunctionCallExpr/function"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//FunctionCallExpr/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//VariableCallExpr">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//VariableCallExpr/variable"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//AddSubExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//AddSubExpr/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//AddSubExpr/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//AddSubExpr/right"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//MultiDivExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//MultiDivExpr/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//MultiDivExpr/left"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//AddSubOperator"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//MultiDivOperator"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//BaseExpr"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//GetSensors"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//Value"/>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//MultiDivRightExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//MultiDivRightExp/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//MultiDivRightExp/right"/>
+    </genClasses>
+    <genClasses ecoreClass="robotMlEcoreMetamodel.ecore#//AddSubbRightExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//AddSubbRightExp/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotMlEcoreMetamodel.ecore#//AddSubbRightExp/right"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

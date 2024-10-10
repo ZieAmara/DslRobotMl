@@ -10,40 +10,40 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import robotMlEcoreMetamodel.Clock;
 import robotMlEcoreMetamodel.Expression;
+import robotMlEcoreMetamodel.ReturnExp;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Clock</b></em>'.
+ * An implementation of the model object '<em><b>Return Exp</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link robotMlEcoreMetamodel.impl.ClockImpl#getAngle <em>Angle</em>}</li>
+ *   <li>{@link robotMlEcoreMetamodel.impl.ReturnExpImpl#getExpression <em>Expression</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ClockImpl extends StatementImpl implements Clock {
+public class ReturnExpImpl extends StatementImpl implements ReturnExp {
 	/**
-	 * The cached value of the '{@link #getAngle() <em>Angle</em>}' containment reference.
+	 * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAngle()
+	 * @see #getExpression()
 	 * @generated
 	 * @ordered
 	 */
-	protected Expression angle;
+	protected Expression expression;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClockImpl() {
+	protected ReturnExpImpl() {
 		super();
 	}
 
@@ -54,7 +54,7 @@ public class ClockImpl extends StatementImpl implements Clock {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.CLOCK;
+		return RobotMlEcoreMetamodelPackage.Literals.RETURN_EXP;
 	}
 
 	/**
@@ -63,8 +63,8 @@ public class ClockImpl extends StatementImpl implements Clock {
 	 * @generated
 	 */
 	@Override
-	public Expression getAngle() {
-		return angle;
+	public Expression getExpression() {
+		return expression;
 	}
 
 	/**
@@ -72,12 +72,12 @@ public class ClockImpl extends StatementImpl implements Clock {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngle(Expression newAngle, NotificationChain msgs) {
-		Expression oldAngle = angle;
-		angle = newAngle;
+	public NotificationChain basicSetExpression(Expression newExpression, NotificationChain msgs) {
+		Expression oldExpression = expression;
+		expression = newExpression;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					RobotMlEcoreMetamodelPackage.CLOCK__ANGLE, oldAngle, newAngle);
+					RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION, oldExpression, newExpression);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -92,21 +92,21 @@ public class ClockImpl extends StatementImpl implements Clock {
 	 * @generated
 	 */
 	@Override
-	public void setAngle(Expression newAngle) {
-		if (newAngle != angle) {
+	public void setExpression(Expression newExpression) {
+		if (newExpression != expression) {
 			NotificationChain msgs = null;
-			if (angle != null)
-				msgs = ((InternalEObject) angle).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.CLOCK__ANGLE, null, msgs);
-			if (newAngle != null)
-				msgs = ((InternalEObject) newAngle).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.CLOCK__ANGLE, null, msgs);
-			msgs = basicSetAngle(newAngle, msgs);
+			if (expression != null)
+				msgs = ((InternalEObject) expression).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION, null, msgs);
+			if (newExpression != null)
+				msgs = ((InternalEObject) newExpression).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION, null, msgs);
+			msgs = basicSetExpression(newExpression, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.CLOCK__ANGLE, newAngle,
-					newAngle));
+			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION,
+					newExpression, newExpression));
 	}
 
 	/**
@@ -117,8 +117,8 @@ public class ClockImpl extends StatementImpl implements Clock {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CLOCK__ANGLE:
-			return basicSetAngle(null, msgs);
+		case RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION:
+			return basicSetExpression(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -131,8 +131,8 @@ public class ClockImpl extends StatementImpl implements Clock {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CLOCK__ANGLE:
-			return getAngle();
+		case RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION:
+			return getExpression();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -145,8 +145,8 @@ public class ClockImpl extends StatementImpl implements Clock {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CLOCK__ANGLE:
-			setAngle((Expression) newValue);
+		case RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION:
+			setExpression((Expression) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -160,8 +160,8 @@ public class ClockImpl extends StatementImpl implements Clock {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CLOCK__ANGLE:
-			setAngle((Expression) null);
+		case RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION:
+			setExpression((Expression) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -175,10 +175,10 @@ public class ClockImpl extends StatementImpl implements Clock {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CLOCK__ANGLE:
-			return angle != null;
+		case RobotMlEcoreMetamodelPackage.RETURN_EXP__EXPRESSION:
+			return expression != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //ClockImpl
+} //ReturnExpImpl

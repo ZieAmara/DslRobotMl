@@ -18,7 +18,7 @@ package robotMlEcoreMetamodel;
  * @model
  * @generated
  */
-public interface Clock extends Rotation {
+public interface Clock extends Statement {
 	/**
 	 * Returns the value of the '<em><b>Angle</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

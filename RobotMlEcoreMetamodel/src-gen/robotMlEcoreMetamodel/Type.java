@@ -36,7 +36,34 @@ public enum Type implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	BOOLEAN(1, "boolean", "boolean");
+	BOOLEAN(1, "boolean", "boolean"),
+	/**
+	* The '<em><b>Cm</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #CM_VALUE
+	* @generated
+	* @ordered
+	*/
+	CM(2, "cm", "cm"),
+	/**
+	* The '<em><b>Mm</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #MM_VALUE
+	* @generated
+	* @ordered
+	*/
+	MM(3, "mm", "mm"),
+	/**
+	* The '<em><b>M</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #M_VALUE
+	* @generated
+	* @ordered
+	*/
+	M(4, "m", "m");
 
 	/**
 	 * The '<em><b>Number</b></em>' literal value.
@@ -61,12 +88,45 @@ public enum Type implements Enumerator {
 	public static final int BOOLEAN_VALUE = 1;
 
 	/**
+	 * The '<em><b>Cm</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #CM
+	 * @model name="cm"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CM_VALUE = 2;
+
+	/**
+	 * The '<em><b>Mm</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #MM
+	 * @model name="mm"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int MM_VALUE = 3;
+
+	/**
+	 * The '<em><b>M</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #M
+	 * @model name="m"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int M_VALUE = 4;
+
+	/**
 	 * An array of all the '<em><b>Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final Type[] VALUES_ARRAY = new Type[] { NUMBER, BOOLEAN, };
+	private static final Type[] VALUES_ARRAY = new Type[] { NUMBER, BOOLEAN, CM, MM, M, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Type</b></em>' enumerators.
@@ -126,6 +186,12 @@ public enum Type implements Enumerator {
 			return NUMBER;
 		case BOOLEAN_VALUE:
 			return BOOLEAN;
+		case CM_VALUE:
+			return CM;
+		case MM_VALUE:
+			return MM;
+		case M_VALUE:
+			return M;
 		}
 		return null;
 	}

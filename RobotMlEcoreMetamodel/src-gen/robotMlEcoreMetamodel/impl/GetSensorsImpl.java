@@ -4,25 +4,23 @@ package robotMlEcoreMetamodel.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import robotMlEcoreMetamodel.BooleanOPerator;
+import robotMlEcoreMetamodel.GetSensors;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean OPerator</b></em>'.
+ * An implementation of the model object '<em><b>Get Sensors</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements BooleanOPerator {
+public class GetSensorsImpl extends BaseExprImpl implements GetSensors {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanOPeratorImpl() {
+	protected GetSensorsImpl() {
 		super();
 	}
 
@@ -33,7 +31,7 @@ public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.BOOLEAN_OPERATOR;
+		return RobotMlEcoreMetamodelPackage.Literals.GET_SENSORS;
 	}
 
-} //BooleanOPeratorImpl
+} //GetSensorsImpl

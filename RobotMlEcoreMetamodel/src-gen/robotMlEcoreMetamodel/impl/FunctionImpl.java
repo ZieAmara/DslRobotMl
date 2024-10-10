@@ -62,14 +62,14 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getReturntype() <em>Returntype</em>}' containment reference list.
+	 * The cached value of the '{@link #getReturntype() <em>Returntype</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getReturntype()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ReturnType> returntype;
+	protected ReturnType returntype;
 
 	/**
 	 * The cached value of the '{@link #getBody() <em>Body</em>}' containment reference list.
@@ -140,12 +140,50 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 	 * @generated
 	 */
 	@Override
-	public EList<ReturnType> getReturntype() {
-		if (returntype == null) {
-			returntype = new EObjectContainmentEList<ReturnType>(ReturnType.class, this,
-					RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE);
-		}
+	public ReturnType getReturntype() {
 		return returntype;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetReturntype(ReturnType newReturntype, NotificationChain msgs) {
+		ReturnType oldReturntype = returntype;
+		returntype = newReturntype;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE, oldReturntype, newReturntype);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturntype(ReturnType newReturntype) {
+		if (newReturntype != returntype) {
+			NotificationChain msgs = null;
+			if (returntype != null)
+				msgs = ((InternalEObject) returntype).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE, null, msgs);
+			if (newReturntype != null)
+				msgs = ((InternalEObject) newReturntype).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE, null, msgs);
+			msgs = basicSetReturntype(newReturntype, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE,
+					newReturntype, newReturntype));
 	}
 
 	/**
@@ -185,7 +223,7 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE:
-			return ((InternalEList<?>) getReturntype()).basicRemove(otherEnd, msgs);
+			return basicSetReturntype(null, msgs);
 		case RobotMlEcoreMetamodelPackage.FUNCTION__BODY:
 			return ((InternalEList<?>) getBody()).basicRemove(otherEnd, msgs);
 		case RobotMlEcoreMetamodelPackage.FUNCTION__PARAMETER:
@@ -227,8 +265,7 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 			setName((String) newValue);
 			return;
 		case RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE:
-			getReturntype().clear();
-			getReturntype().addAll((Collection<? extends ReturnType>) newValue);
+			setReturntype((ReturnType) newValue);
 			return;
 		case RobotMlEcoreMetamodelPackage.FUNCTION__BODY:
 			getBody().clear();
@@ -254,7 +291,7 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 			setName(NAME_EDEFAULT);
 			return;
 		case RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE:
-			getReturntype().clear();
+			setReturntype((ReturnType) null);
 			return;
 		case RobotMlEcoreMetamodelPackage.FUNCTION__BODY:
 			getBody().clear();
@@ -277,7 +314,7 @@ public class FunctionImpl extends MinimalEObjectImpl.Container implements Functi
 		case RobotMlEcoreMetamodelPackage.FUNCTION__NAME:
 			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		case RobotMlEcoreMetamodelPackage.FUNCTION__RETURNTYPE:
-			return returntype != null && !returntype.isEmpty();
+			return returntype != null;
 		case RobotMlEcoreMetamodelPackage.FUNCTION__BODY:
 			return body != null && !body.isEmpty();
 		case RobotMlEcoreMetamodelPackage.FUNCTION__PARAMETER:

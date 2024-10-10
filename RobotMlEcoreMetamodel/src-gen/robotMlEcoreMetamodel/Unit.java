@@ -36,7 +36,16 @@ public enum Unit implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MM(1, "mm", "mm");
+	MM(1, "mm", "mm"),
+	/**
+	* The '<em><b>M</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #M_VALUE
+	* @generated
+	* @ordered
+	*/
+	M(2, "m", "m");
 
 	/**
 	 * The '<em><b>Cm</b></em>' literal value.
@@ -61,12 +70,23 @@ public enum Unit implements Enumerator {
 	public static final int MM_VALUE = 1;
 
 	/**
+	 * The '<em><b>M</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #M
+	 * @model name="m"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int M_VALUE = 2;
+
+	/**
 	 * An array of all the '<em><b>Unit</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final Unit[] VALUES_ARRAY = new Unit[] { CM, MM, };
+	private static final Unit[] VALUES_ARRAY = new Unit[] { CM, MM, M, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Unit</b></em>' enumerators.
@@ -126,6 +146,8 @@ public enum Unit implements Enumerator {
 			return CM;
 		case MM_VALUE:
 			return MM;
+		case M_VALUE:
+			return M;
 		}
 		return null;
 	}

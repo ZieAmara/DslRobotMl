@@ -35,8 +35,8 @@
         eType="#//Expression" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ControlStructure" abstract="true" eSuperTypes="#//Statement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-1" eType="#//BooleanExpr"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" lowerBound="1"
+        upperBound="-1" eType="#//BooleanExpr" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="If" eSuperTypes="#//ControlStructure">
     <eStructuralFeatures xsi:type="ecore:EReference" name="else" eType="#//Statement"
@@ -45,8 +45,8 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Loop" eSuperTypes="#//ControlStructure">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" upperBound="-1"
-        eType="#//Statement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-1" eType="#//Statement"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Forward" eSuperTypes="#//Movement"/>
   <eClassifiers xsi:type="ecore:EClass" name="Backward" eSuperTypes="#//Movement"/>
@@ -71,7 +71,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="FunctionCall" eSuperTypes="#//Statement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="function" lowerBound="1"
         eType="#//Function"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
         eType="#//Expression" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Parameter">
@@ -87,14 +87,7 @@
         eType="#//BooleanOPerator" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArithmeticExpr" abstract="true" eSuperTypes="#//Expression"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BooleanOPerator" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LowerThan" eSuperTypes="#//BooleanOPerator"/>
-  <eClassifiers xsi:type="ecore:EClass" name="UpperThan" eSuperTypes="#//BooleanOPerator"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EqualTo" eSuperTypes="#//BooleanOPerator"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Add" eSuperTypes="#//ArithmeticExpr"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Multiplication" eSuperTypes="#//ArithmeticExpr"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Sub" eSuperTypes="#//ArithmeticExpr"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Division" eSuperTypes="#//ArithmeticExpr"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BooleanOPerator"/>
   <eClassifiers xsi:type="ecore:EEnum" name="Type">
     <eLiterals name="number"/>
     <eLiterals name="boolean" value="1"/>
@@ -102,5 +95,50 @@
     <eLiterals name="mm" value="3"/>
     <eLiterals name="m" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReturnExp" eSuperTypes="#//Statement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReturnExp" eSuperTypes="#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" lowerBound="1"
+        eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpressionUnair" abstract="true" eSuperTypes="#//Expression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionCallExpr" eSuperTypes="#//ExpressionUnair">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="function" lowerBound="1"
+        eType="#//Function"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
+        eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariableCallExpr" eSuperTypes="#//ExpressionUnair">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        eType="#//VariableDecl"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddSubExpr" eSuperTypes="#//ArithmeticExpr">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1" eType="#//MultiDivExpr"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operator" upperBound="-1"
+        eType="#//AddSubOperator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" upperBound="-1"
+        eType="#//AddSubbRightExp" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiDivExpr">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" upperBound="-1"
+        eType="#//MultiDivRightExp" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1" eType="#//BaseExpr"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddSubOperator" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiDivOperator" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseExpr" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GetSensors" eSuperTypes="#//BaseExpr"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" eSuperTypes="#//BaseExpr"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiDivRightExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operator" lowerBound="1"
+        eType="#//MultiDivOperator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1" eType="#//BaseExpr"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddSubbRightExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operator" lowerBound="1"
+        eType="#//AddSubOperator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1" eType="#//MultiDivExpr"
+        containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

@@ -4,25 +4,23 @@ package robotMlEcoreMetamodel.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import robotMlEcoreMetamodel.BooleanOPerator;
+import robotMlEcoreMetamodel.ExpressionUnair;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean OPerator</b></em>'.
+ * An implementation of the model object '<em><b>Expression Unair</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements BooleanOPerator {
+public abstract class ExpressionUnairImpl extends ExpressionImpl implements ExpressionUnair {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanOPeratorImpl() {
+	protected ExpressionUnairImpl() {
 		super();
 	}
 
@@ -33,7 +31,7 @@ public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.BOOLEAN_OPERATOR;
+		return RobotMlEcoreMetamodelPackage.Literals.EXPRESSION_UNAIR;
 	}
 
-} //BooleanOPeratorImpl
+} //ExpressionUnairImpl

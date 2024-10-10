@@ -6,23 +6,23 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import robotMlEcoreMetamodel.BooleanOPerator;
+import robotMlEcoreMetamodel.MultiDivOperator;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean OPerator</b></em>'.
+ * An implementation of the model object '<em><b>Multi Div Operator</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements BooleanOPerator {
+public abstract class MultiDivOperatorImpl extends MinimalEObjectImpl.Container implements MultiDivOperator {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanOPeratorImpl() {
+	protected MultiDivOperatorImpl() {
 		super();
 	}
 
@@ -33,7 +33,7 @@ public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.BOOLEAN_OPERATOR;
+		return RobotMlEcoreMetamodelPackage.Literals.MULTI_DIV_OPERATOR;
 	}
 
-} //BooleanOPeratorImpl
+} //MultiDivOperatorImpl

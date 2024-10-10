@@ -6,23 +6,23 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import robotMlEcoreMetamodel.BooleanOPerator;
+import robotMlEcoreMetamodel.AddSubOperator;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean OPerator</b></em>'.
+ * An implementation of the model object '<em><b>Add Sub Operator</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements BooleanOPerator {
+public abstract class AddSubOperatorImpl extends MinimalEObjectImpl.Container implements AddSubOperator {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanOPeratorImpl() {
+	protected AddSubOperatorImpl() {
 		super();
 	}
 
@@ -33,7 +33,7 @@ public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.BOOLEAN_OPERATOR;
+		return RobotMlEcoreMetamodelPackage.Literals.ADD_SUB_OPERATOR;
 	}
 
-} //BooleanOPeratorImpl
+} //AddSubOperatorImpl

@@ -2,18 +2,12 @@
  */
 package robotMlEcoreMetamodel.impl;
 
-import java.util.Collection;
-
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import robotMlEcoreMetamodel.If;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 import robotMlEcoreMetamodel.Statement;
@@ -34,24 +28,24 @@ import robotMlEcoreMetamodel.Statement;
  */
 public class IfImpl extends ControlStructureImpl implements If {
 	/**
-	 * The cached value of the '{@link #getElse() <em>Else</em>}' containment reference list.
+	 * The cached value of the '{@link #getElse() <em>Else</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getElse()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Statement> else_;
+	protected Statement else_;
 
 	/**
-	 * The cached value of the '{@link #getThen() <em>Then</em>}' containment reference list.
+	 * The cached value of the '{@link #getThen() <em>Then</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getThen()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Statement> then;
+	protected Statement then;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,11 +72,7 @@ public class IfImpl extends ControlStructureImpl implements If {
 	 * @generated
 	 */
 	@Override
-	public EList<Statement> getElse() {
-		if (else_ == null) {
-			else_ = new EObjectContainmentEList<Statement>(Statement.class, this,
-					RobotMlEcoreMetamodelPackage.IF__ELSE);
-		}
+	public Statement getElse() {
 		return else_;
 	}
 
@@ -91,12 +81,93 @@ public class IfImpl extends ControlStructureImpl implements If {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Statement> getThen() {
-		if (then == null) {
-			then = new EObjectContainmentEList<Statement>(Statement.class, this, RobotMlEcoreMetamodelPackage.IF__THEN);
+	public NotificationChain basicSetElse(Statement newElse, NotificationChain msgs) {
+		Statement oldElse = else_;
+		else_ = newElse;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					RobotMlEcoreMetamodelPackage.IF__ELSE, oldElse, newElse);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
 		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setElse(Statement newElse) {
+		if (newElse != else_) {
+			NotificationChain msgs = null;
+			if (else_ != null)
+				msgs = ((InternalEObject) else_).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.IF__ELSE, null, msgs);
+			if (newElse != null)
+				msgs = ((InternalEObject) newElse).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.IF__ELSE, null, msgs);
+			msgs = basicSetElse(newElse, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.IF__ELSE, newElse,
+					newElse));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Statement getThen() {
 		return then;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetThen(Statement newThen, NotificationChain msgs) {
+		Statement oldThen = then;
+		then = newThen;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					RobotMlEcoreMetamodelPackage.IF__THEN, oldThen, newThen);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setThen(Statement newThen) {
+		if (newThen != then) {
+			NotificationChain msgs = null;
+			if (then != null)
+				msgs = ((InternalEObject) then).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.IF__THEN, null, msgs);
+			if (newThen != null)
+				msgs = ((InternalEObject) newThen).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - RobotMlEcoreMetamodelPackage.IF__THEN, null, msgs);
+			msgs = basicSetThen(newThen, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.IF__THEN, newThen,
+					newThen));
 	}
 
 	/**
@@ -108,9 +179,9 @@ public class IfImpl extends ControlStructureImpl implements If {
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case RobotMlEcoreMetamodelPackage.IF__ELSE:
-			return ((InternalEList<?>) getElse()).basicRemove(otherEnd, msgs);
+			return basicSetElse(null, msgs);
 		case RobotMlEcoreMetamodelPackage.IF__THEN:
-			return ((InternalEList<?>) getThen()).basicRemove(otherEnd, msgs);
+			return basicSetThen(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -141,12 +212,10 @@ public class IfImpl extends ControlStructureImpl implements If {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case RobotMlEcoreMetamodelPackage.IF__ELSE:
-			getElse().clear();
-			getElse().addAll((Collection<? extends Statement>) newValue);
+			setElse((Statement) newValue);
 			return;
 		case RobotMlEcoreMetamodelPackage.IF__THEN:
-			getThen().clear();
-			getThen().addAll((Collection<? extends Statement>) newValue);
+			setThen((Statement) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -161,10 +230,10 @@ public class IfImpl extends ControlStructureImpl implements If {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case RobotMlEcoreMetamodelPackage.IF__ELSE:
-			getElse().clear();
+			setElse((Statement) null);
 			return;
 		case RobotMlEcoreMetamodelPackage.IF__THEN:
-			getThen().clear();
+			setThen((Statement) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -179,9 +248,9 @@ public class IfImpl extends ControlStructureImpl implements If {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case RobotMlEcoreMetamodelPackage.IF__ELSE:
-			return else_ != null && !else_.isEmpty();
+			return else_ != null;
 		case RobotMlEcoreMetamodelPackage.IF__THEN:
-			return then != null && !then.isEmpty();
+			return then != null;
 		}
 		return super.eIsSet(featureID);
 	}

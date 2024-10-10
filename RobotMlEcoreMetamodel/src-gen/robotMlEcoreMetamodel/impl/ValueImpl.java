@@ -4,25 +4,23 @@ package robotMlEcoreMetamodel.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import robotMlEcoreMetamodel.BooleanOPerator;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
+import robotMlEcoreMetamodel.Value;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean OPerator</b></em>'.
+ * An implementation of the model object '<em><b>Value</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements BooleanOPerator {
+public class ValueImpl extends BaseExprImpl implements Value {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanOPeratorImpl() {
+	protected ValueImpl() {
 		super();
 	}
 
@@ -33,7 +31,7 @@ public class BooleanOPeratorImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.BOOLEAN_OPERATOR;
+		return RobotMlEcoreMetamodelPackage.Literals.VALUE;
 	}
 
-} //BooleanOPeratorImpl
+} //ValueImpl

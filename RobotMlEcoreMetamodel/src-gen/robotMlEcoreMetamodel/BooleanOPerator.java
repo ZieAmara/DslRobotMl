@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage#getBooleanOPerator()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface BooleanOPerator extends EObject {

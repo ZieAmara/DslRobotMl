@@ -19,24 +19,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import robotMlEcoreMetamodel.Expression;
 import robotMlEcoreMetamodel.Function;
-import robotMlEcoreMetamodel.FunctionCall;
+import robotMlEcoreMetamodel.FunctionCallExpr;
 import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Function Call</b></em>'.
+ * An implementation of the model object '<em><b>Function Call Expr</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link robotMlEcoreMetamodel.impl.FunctionCallImpl#getFunction <em>Function</em>}</li>
- *   <li>{@link robotMlEcoreMetamodel.impl.FunctionCallImpl#getArguments <em>Arguments</em>}</li>
+ *   <li>{@link robotMlEcoreMetamodel.impl.FunctionCallExprImpl#getFunction <em>Function</em>}</li>
+ *   <li>{@link robotMlEcoreMetamodel.impl.FunctionCallExprImpl#getArguments <em>Arguments</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class FunctionCallImpl extends StatementImpl implements FunctionCall {
+public class FunctionCallExprImpl extends ExpressionUnairImpl implements FunctionCallExpr {
 	/**
 	 * The cached value of the '{@link #getFunction() <em>Function</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -62,7 +62,7 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FunctionCallImpl() {
+	protected FunctionCallExprImpl() {
 		super();
 	}
 
@@ -73,7 +73,7 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RobotMlEcoreMetamodelPackage.Literals.FUNCTION_CALL;
+		return RobotMlEcoreMetamodelPackage.Literals.FUNCTION_CALL_EXPR;
 	}
 
 	/**
@@ -89,7 +89,7 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 			if (function != oldFunction) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION, oldFunction, function));
+							RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION, oldFunction, function));
 			}
 		}
 		return function;
@@ -114,8 +114,8 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 		Function oldFunction = function;
 		function = newFunction;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION,
-					oldFunction, function));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION, oldFunction, function));
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	public EList<Expression> getArguments() {
 		if (arguments == null) {
 			arguments = new EObjectContainmentEList<Expression>(Expression.class, this,
-					RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS);
+					RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS);
 		}
 		return arguments;
 	}
@@ -140,7 +140,7 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS:
 			return ((InternalEList<?>) getArguments()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -154,11 +154,11 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION:
 			if (resolve)
 				return getFunction();
 			return basicGetFunction();
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS:
 			return getArguments();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -173,10 +173,10 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION:
 			setFunction((Function) newValue);
 			return;
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS:
 			getArguments().clear();
 			getArguments().addAll((Collection<? extends Expression>) newValue);
 			return;
@@ -192,10 +192,10 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION:
 			setFunction((Function) null);
 			return;
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS:
 			getArguments().clear();
 			return;
 		}
@@ -210,12 +210,12 @@ public class FunctionCallImpl extends StatementImpl implements FunctionCall {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__FUNCTION:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__FUNCTION:
 			return function != null;
-		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL__ARGUMENTS:
+		case RobotMlEcoreMetamodelPackage.FUNCTION_CALL_EXPR__ARGUMENTS:
 			return arguments != null && !arguments.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //FunctionCallImpl
+} //FunctionCallExprImpl

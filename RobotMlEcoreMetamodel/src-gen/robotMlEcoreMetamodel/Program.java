@@ -30,7 +30,7 @@ public interface Program extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Function</em>' containment reference list.
 	 * @see robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage#getProgram_Function()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Function> getFunction();

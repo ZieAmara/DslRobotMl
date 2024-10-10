@@ -49,16 +49,26 @@ public interface Function extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Returntype</b></em>' containment reference list.
-	 * The list contents are of type {@link robotMlEcoreMetamodel.ReturnType}.
+	 * Returns the value of the '<em><b>Returntype</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Returntype</em>' containment reference list.
+	 * @return the value of the '<em>Returntype</em>' containment reference.
+	 * @see #setReturntype(ReturnType)
 	 * @see robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage#getFunction_Returntype()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<ReturnType> getReturntype();
+	ReturnType getReturntype();
+
+	/**
+	 * Sets the value of the '{@link robotMlEcoreMetamodel.Function#getReturntype <em>Returntype</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Returntype</em>' containment reference.
+	 * @see #getReturntype()
+	 * @generated
+	 */
+	void setReturntype(ReturnType value);
 
 	/**
 	 * Returns the value of the '<em><b>Body</b></em>' containment reference list.

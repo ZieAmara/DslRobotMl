@@ -114,7 +114,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int FUNCTION__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Returntype</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Returntype</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -159,34 +159,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int FUNCTION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.NewEClass45Impl <em>New EClass45</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.NewEClass45Impl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getNewEClass45()
-	 * @generated
-	 */
-	int NEW_ECLASS45 = 2;
-
-	/**
-	 * The number of structural features of the '<em>New EClass45</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NEW_ECLASS45_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>New EClass45</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NEW_ECLASS45_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.ReturnTypeImpl <em>Return Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -194,7 +166,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getReturnType()
 	 * @generated
 	 */
-	int RETURN_TYPE = 3;
+	int RETURN_TYPE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -231,7 +203,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getStatement()
 	 * @generated
 	 */
-	int STATEMENT = 4;
+	int STATEMENT = 3;
 
 	/**
 	 * The number of structural features of the '<em>Statement</em>' class.
@@ -252,14 +224,14 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int STATEMENT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.VariableImpl <em>Variable</em>}' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.VariableDeclImpl <em>Variable Decl</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.VariableImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariable()
+	 * @see robotMlEcoreMetamodel.impl.VariableDeclImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariableDecl()
 	 * @generated
 	 */
-	int VARIABLE = 5;
+	int VARIABLE_DECL = 4;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -268,7 +240,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIABLE__NAME = STATEMENT_FEATURE_COUNT + 0;
+	int VARIABLE_DECL__NAME = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -277,25 +249,34 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIABLE__TYPE = STATEMENT_FEATURE_COUNT + 1;
+	int VARIABLE_DECL__TYPE = STATEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Variable</em>' class.
+	 * The feature id for the '<em><b>Valeur</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VARIABLE_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 2;
+	int VARIABLE_DECL__VALEUR = STATEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>Variable</em>' class.
+	 * The number of structural features of the '<em>Variable Decl</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VARIABLE_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
+	int VARIABLE_DECL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Variable Decl</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABLE_DECL_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.MovementImpl <em>Movement</em>}' class.
@@ -305,7 +286,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMovement()
 	 * @generated
 	 */
-	int MOVEMENT = 6;
+	int MOVEMENT = 5;
 
 	/**
 	 * The feature id for the '<em><b>Distance</b></em>' containment reference.
@@ -342,16 +323,16 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getControlStructure()
 	 * @generated
 	 */
-	int CONTROL_STRUCTURE = 7;
+	int CONTROL_STRUCTURE = 6;
 
 	/**
-	 * The feature id for the '<em><b>Booleanexpression</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Condition</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROL_STRUCTURE__BOOLEANEXPRESSION = STATEMENT_FEATURE_COUNT + 0;
+	int CONTROL_STRUCTURE__CONDITION = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Control Structure</em>' class.
@@ -379,19 +360,19 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getIf()
 	 * @generated
 	 */
-	int IF = 8;
+	int IF = 7;
 
 	/**
-	 * The feature id for the '<em><b>Booleanexpression</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Condition</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IF__BOOLEANEXPRESSION = CONTROL_STRUCTURE__BOOLEANEXPRESSION;
+	int IF__CONDITION = CONTROL_STRUCTURE__CONDITION;
 
 	/**
-	 * The feature id for the '<em><b>Else</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Else</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -400,7 +381,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int IF__ELSE = CONTROL_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Then</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Then</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -434,16 +415,16 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getLoop()
 	 * @generated
 	 */
-	int LOOP = 9;
+	int LOOP = 8;
 
 	/**
-	 * The feature id for the '<em><b>Booleanexpression</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Condition</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOOP__BOOLEANEXPRESSION = CONTROL_STRUCTURE__BOOLEANEXPRESSION;
+	int LOOP__CONDITION = CONTROL_STRUCTURE__CONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Body</b></em>' containment reference list.
@@ -480,7 +461,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getForward()
 	 * @generated
 	 */
-	int FORWARD = 10;
+	int FORWARD = 9;
 
 	/**
 	 * The feature id for the '<em><b>Distance</b></em>' containment reference.
@@ -510,62 +491,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int FORWARD_OPERATION_COUNT = MOVEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.RotationImpl <em>Rotation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.RotationImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotation()
-	 * @generated
-	 */
-	int ROTATION = 16;
-
-	/**
-	 * The number of structural features of the '<em>Rotation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATION_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Rotation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATION_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.RotateLeftImpl <em>Rotate Left</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.RotateLeftImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotateLeft()
-	 * @generated
-	 */
-	int ROTATE_LEFT = 11;
-
-	/**
-	 * The number of structural features of the '<em>Rotate Left</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATE_LEFT_FEATURE_COUNT = ROTATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Rotate Left</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATE_LEFT_OPERATION_COUNT = ROTATION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.BackwardImpl <em>Backward</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -573,7 +498,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getBackward()
 	 * @generated
 	 */
-	int BACKWARD = 12;
+	int BACKWARD = 10;
 
 	/**
 	 * The feature id for the '<em><b>Distance</b></em>' containment reference.
@@ -603,34 +528,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int BACKWARD_OPERATION_COUNT = MOVEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.RotateRightImpl <em>Rotate Right</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.RotateRightImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotateRight()
-	 * @generated
-	 */
-	int ROTATE_RIGHT = 13;
-
-	/**
-	 * The number of structural features of the '<em>Rotate Right</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATE_RIGHT_FEATURE_COUNT = ROTATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Rotate Right</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROTATE_RIGHT_OPERATION_COUNT = ROTATION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.RightImpl <em>Right</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -638,7 +535,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRight()
 	 * @generated
 	 */
-	int RIGHT = 14;
+	int RIGHT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Distance</b></em>' containment reference.
@@ -675,7 +572,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getLeft()
 	 * @generated
 	 */
-	int LEFT = 15;
+	int LEFT = 12;
 
 	/**
 	 * The feature id for the '<em><b>Distance</b></em>' containment reference.
@@ -712,7 +609,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getSetSpeed()
 	 * @generated
 	 */
-	int SET_SPEED = 17;
+	int SET_SPEED = 13;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -758,7 +655,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariableAssign()
 	 * @generated
 	 */
-	int VARIABLE_ASSIGN = 18;
+	int VARIABLE_ASSIGN = 14;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' reference.
@@ -770,13 +667,22 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int VARIABLE_ASSIGN__VARIABLE = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Valeur</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABLE_ASSIGN__VALEUR = STATEMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Variable Assign</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VARIABLE_ASSIGN_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
+	int VARIABLE_ASSIGN_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Variable Assign</em>' class.
@@ -795,7 +701,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getClock()
 	 * @generated
 	 */
-	int CLOCK = 19;
+	int CLOCK = 15;
 
 	/**
 	 * The feature id for the '<em><b>Angle</b></em>' containment reference.
@@ -804,7 +710,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOCK__ANGLE = ROTATION_FEATURE_COUNT + 0;
+	int CLOCK__ANGLE = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Clock</em>' class.
@@ -813,7 +719,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOCK_FEATURE_COUNT = ROTATION_FEATURE_COUNT + 1;
+	int CLOCK_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Clock</em>' class.
@@ -822,7 +728,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOCK_OPERATION_COUNT = ROTATION_OPERATION_COUNT + 0;
+	int CLOCK_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.ExpressionImpl <em>Expression</em>}' class.
@@ -832,7 +738,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getExpression()
 	 * @generated
 	 */
-	int EXPRESSION = 20;
+	int EXPRESSION = 16;
 
 	/**
 	 * The number of structural features of the '<em>Expression</em>' class.
@@ -860,7 +766,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getFunctionCall()
 	 * @generated
 	 */
-	int FUNCTION_CALL = 21;
+	int FUNCTION_CALL = 17;
 
 	/**
 	 * The feature id for the '<em><b>Function</b></em>' reference.
@@ -872,13 +778,13 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int FUNCTION_CALL__FUNCTION = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Expression</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCTION_CALL__EXPRESSION = STATEMENT_FEATURE_COUNT + 1;
+	int FUNCTION_CALL__ARGUMENTS = STATEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Function Call</em>' class.
@@ -906,7 +812,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getParameter()
 	 * @generated
 	 */
-	int PARAMETER = 22;
+	int PARAMETER = 18;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -952,7 +858,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getBooleanExpr()
 	 * @generated
 	 */
-	int BOOLEAN_EXPR = 23;
+	int BOOLEAN_EXPR = 19;
 
 	/**
 	 * The feature id for the '<em><b>Left</b></em>' containment reference.
@@ -1007,7 +913,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getArithmeticExpr()
 	 * @generated
 	 */
-	int ARITHMETIC_EXPR = 24;
+	int ARITHMETIC_EXPR = 20;
 
 	/**
 	 * The number of structural features of the '<em>Arithmetic Expr</em>' class.
@@ -1035,7 +941,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getBooleanOPerator()
 	 * @generated
 	 */
-	int BOOLEAN_OPERATOR = 25;
+	int BOOLEAN_OPERATOR = 21;
 
 	/**
 	 * The number of structural features of the '<em>Boolean OPerator</em>' class.
@@ -1056,228 +962,485 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	int BOOLEAN_OPERATOR_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.LowerThanImpl <em>Lower Than</em>}' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.ReturnExpImpl <em>Return Exp</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.LowerThanImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getLowerThan()
+	 * @see robotMlEcoreMetamodel.impl.ReturnExpImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getReturnExp()
 	 * @generated
 	 */
-	int LOWER_THAN = 26;
+	int RETURN_EXP = 22;
 
 	/**
-	 * The number of structural features of the '<em>Lower Than</em>' class.
+	 * The feature id for the '<em><b>Expression</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOWER_THAN_FEATURE_COUNT = BOOLEAN_OPERATOR_FEATURE_COUNT + 0;
+	int RETURN_EXP__EXPRESSION = STATEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Lower Than</em>' class.
+	 * The number of structural features of the '<em>Return Exp</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOWER_THAN_OPERATION_COUNT = BOOLEAN_OPERATOR_OPERATION_COUNT + 0;
+	int RETURN_EXP_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.UpperThanImpl <em>Upper Than</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.UpperThanImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getUpperThan()
-	 * @generated
-	 */
-	int UPPER_THAN = 27;
-
-	/**
-	 * The number of structural features of the '<em>Upper Than</em>' class.
+	 * The number of operations of the '<em>Return Exp</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPPER_THAN_FEATURE_COUNT = BOOLEAN_OPERATOR_FEATURE_COUNT + 0;
+	int RETURN_EXP_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Upper Than</em>' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.ExpressionUnairImpl <em>Expression Unair</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.ExpressionUnairImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getExpressionUnair()
+	 * @generated
+	 */
+	int EXPRESSION_UNAIR = 23;
+
+	/**
+	 * The number of structural features of the '<em>Expression Unair</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPPER_THAN_OPERATION_COUNT = BOOLEAN_OPERATOR_OPERATION_COUNT + 0;
+	int EXPRESSION_UNAIR_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.EqualToImpl <em>Equal To</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.EqualToImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getEqualTo()
-	 * @generated
-	 */
-	int EQUAL_TO = 28;
-
-	/**
-	 * The number of structural features of the '<em>Equal To</em>' class.
+	 * The number of operations of the '<em>Expression Unair</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EQUAL_TO_FEATURE_COUNT = BOOLEAN_OPERATOR_FEATURE_COUNT + 0;
+	int EXPRESSION_UNAIR_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Equal To</em>' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.FunctionCallExprImpl <em>Function Call Expr</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.FunctionCallExprImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getFunctionCallExpr()
+	 * @generated
+	 */
+	int FUNCTION_CALL_EXPR = 24;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EQUAL_TO_OPERATION_COUNT = BOOLEAN_OPERATOR_OPERATION_COUNT + 0;
+	int FUNCTION_CALL_EXPR__FUNCTION = EXPRESSION_UNAIR_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.AddImpl <em>Add</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.AddImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAdd()
-	 * @generated
-	 */
-	int ADD = 29;
-
-	/**
-	 * The number of structural features of the '<em>Add</em>' class.
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADD_FEATURE_COUNT = ARITHMETIC_EXPR_FEATURE_COUNT + 0;
+	int FUNCTION_CALL_EXPR__ARGUMENTS = EXPRESSION_UNAIR_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Add</em>' class.
+	 * The number of structural features of the '<em>Function Call Expr</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADD_OPERATION_COUNT = ARITHMETIC_EXPR_OPERATION_COUNT + 0;
+	int FUNCTION_CALL_EXPR_FEATURE_COUNT = EXPRESSION_UNAIR_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.MultiplicationImpl <em>Multiplication</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.MultiplicationImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiplication()
-	 * @generated
-	 */
-	int MULTIPLICATION = 30;
-
-	/**
-	 * The number of structural features of the '<em>Multiplication</em>' class.
+	 * The number of operations of the '<em>Function Call Expr</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIPLICATION_FEATURE_COUNT = ARITHMETIC_EXPR_FEATURE_COUNT + 0;
+	int FUNCTION_CALL_EXPR_OPERATION_COUNT = EXPRESSION_UNAIR_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Multiplication</em>' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.VariableCallExprImpl <em>Variable Call Expr</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.VariableCallExprImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariableCallExpr()
+	 * @generated
+	 */
+	int VARIABLE_CALL_EXPR = 25;
+
+	/**
+	 * The feature id for the '<em><b>Variable</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIPLICATION_OPERATION_COUNT = ARITHMETIC_EXPR_OPERATION_COUNT + 0;
+	int VARIABLE_CALL_EXPR__VARIABLE = EXPRESSION_UNAIR_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.NewEClass74Impl <em>New EClass74</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.NewEClass74Impl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getNewEClass74()
-	 * @generated
-	 */
-	int NEW_ECLASS74 = 31;
-
-	/**
-	 * The number of structural features of the '<em>New EClass74</em>' class.
+	 * The number of structural features of the '<em>Variable Call Expr</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEW_ECLASS74_FEATURE_COUNT = 0;
+	int VARIABLE_CALL_EXPR_FEATURE_COUNT = EXPRESSION_UNAIR_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>New EClass74</em>' class.
+	 * The number of operations of the '<em>Variable Call Expr</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEW_ECLASS74_OPERATION_COUNT = 0;
+	int VARIABLE_CALL_EXPR_OPERATION_COUNT = EXPRESSION_UNAIR_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.SubImpl <em>Sub</em>}' class.
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.AddSubExprImpl <em>Add Sub Expr</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.SubImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getSub()
+	 * @see robotMlEcoreMetamodel.impl.AddSubExprImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubExpr()
 	 * @generated
 	 */
-	int SUB = 32;
+	int ADD_SUB_EXPR = 26;
 
 	/**
-	 * The number of structural features of the '<em>Sub</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUB_FEATURE_COUNT = ARITHMETIC_EXPR_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Sub</em>' class.
+	 * The feature id for the '<em><b>Left</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUB_OPERATION_COUNT = ARITHMETIC_EXPR_OPERATION_COUNT + 0;
+	int ADD_SUB_EXPR__LEFT = ARITHMETIC_EXPR_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.DivisionImpl <em>Division</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see robotMlEcoreMetamodel.impl.DivisionImpl
-	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getDivision()
-	 * @generated
-	 */
-	int DIVISION = 33;
-
-	/**
-	 * The number of structural features of the '<em>Division</em>' class.
+	 * The feature id for the '<em><b>Operator</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DIVISION_FEATURE_COUNT = ARITHMETIC_EXPR_FEATURE_COUNT + 0;
+	int ADD_SUB_EXPR__OPERATOR = ARITHMETIC_EXPR_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Division</em>' class.
+	 * The feature id for the '<em><b>Right</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DIVISION_OPERATION_COUNT = ARITHMETIC_EXPR_OPERATION_COUNT + 0;
+	int ADD_SUB_EXPR__RIGHT = ARITHMETIC_EXPR_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Add Sub Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUB_EXPR_FEATURE_COUNT = ARITHMETIC_EXPR_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Add Sub Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUB_EXPR_OPERATION_COUNT = ARITHMETIC_EXPR_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.MultiDivExprImpl <em>Multi Div Expr</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.MultiDivExprImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivExpr()
+	 * @generated
+	 */
+	int MULTI_DIV_EXPR = 27;
+
+	/**
+	 * The feature id for the '<em><b>Right</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_EXPR__RIGHT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Left</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_EXPR__LEFT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Multi Div Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_EXPR_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Multi Div Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_EXPR_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.AddSubOperatorImpl <em>Add Sub Operator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.AddSubOperatorImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubOperator()
+	 * @generated
+	 */
+	int ADD_SUB_OPERATOR = 28;
+
+	/**
+	 * The number of structural features of the '<em>Add Sub Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUB_OPERATOR_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Add Sub Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUB_OPERATOR_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.MultiDivOperatorImpl <em>Multi Div Operator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.MultiDivOperatorImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivOperator()
+	 * @generated
+	 */
+	int MULTI_DIV_OPERATOR = 29;
+
+	/**
+	 * The number of structural features of the '<em>Multi Div Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_OPERATOR_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Multi Div Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_OPERATOR_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.BaseExprImpl <em>Base Expr</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.BaseExprImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getBaseExpr()
+	 * @generated
+	 */
+	int BASE_EXPR = 30;
+
+	/**
+	 * The number of structural features of the '<em>Base Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASE_EXPR_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Base Expr</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASE_EXPR_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.GetSensorsImpl <em>Get Sensors</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.GetSensorsImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getGetSensors()
+	 * @generated
+	 */
+	int GET_SENSORS = 31;
+
+	/**
+	 * The number of structural features of the '<em>Get Sensors</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_SENSORS_FEATURE_COUNT = BASE_EXPR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Get Sensors</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_SENSORS_OPERATION_COUNT = BASE_EXPR_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.ValueImpl <em>Value</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.ValueImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getValue()
+	 * @generated
+	 */
+	int VALUE = 32;
+
+	/**
+	 * The number of structural features of the '<em>Value</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_FEATURE_COUNT = BASE_EXPR_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Value</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_OPERATION_COUNT = BASE_EXPR_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.MultiDivRightExpImpl <em>Multi Div Right Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.MultiDivRightExpImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivRightExp()
+	 * @generated
+	 */
+	int MULTI_DIV_RIGHT_EXP = 33;
+
+	/**
+	 * The feature id for the '<em><b>Operator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_RIGHT_EXP__OPERATOR = 0;
+
+	/**
+	 * The feature id for the '<em><b>Right</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_RIGHT_EXP__RIGHT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Multi Div Right Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_RIGHT_EXP_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Multi Div Right Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTI_DIV_RIGHT_EXP_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link robotMlEcoreMetamodel.impl.AddSubbRightExpImpl <em>Add Subb Right Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see robotMlEcoreMetamodel.impl.AddSubbRightExpImpl
+	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubbRightExp()
+	 * @generated
+	 */
+	int ADD_SUBB_RIGHT_EXP = 34;
+
+	/**
+	 * The feature id for the '<em><b>Operator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUBB_RIGHT_EXP__OPERATOR = 0;
+
+	/**
+	 * The feature id for the '<em><b>Right</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUBB_RIGHT_EXP__RIGHT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Add Subb Right Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUBB_RIGHT_EXP_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Add Subb Right Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_SUBB_RIGHT_EXP_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.Type <em>Type</em>}' enum.
@@ -1287,7 +1450,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getType()
 	 * @generated
 	 */
-	int TYPE = 35;
+	int TYPE = 36;
 
 	/**
 	 * The meta object id for the '{@link robotMlEcoreMetamodel.Unit <em>Unit</em>}' enum.
@@ -1297,7 +1460,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getUnit()
 	 * @generated
 	 */
-	int UNIT = 34;
+	int UNIT = 35;
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Program <em>Program</em>}'.
@@ -1342,10 +1505,10 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EAttribute getFunction_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.Function#getReturntype <em>Returntype</em>}'.
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.Function#getReturntype <em>Returntype</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Returntype</em>'.
+	 * @return the meta object for the containment reference '<em>Returntype</em>'.
 	 * @see robotMlEcoreMetamodel.Function#getReturntype()
 	 * @see #getFunction()
 	 * @generated
@@ -1373,16 +1536,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFunction_Parameter();
-
-	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.NewEClass45 <em>New EClass45</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>New EClass45</em>'.
-	 * @see robotMlEcoreMetamodel.NewEClass45
-	 * @generated
-	 */
-	EClass getNewEClass45();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.ReturnType <em>Return Type</em>}'.
@@ -1416,36 +1569,47 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EClass getStatement();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Variable <em>Variable</em>}'.
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.VariableDecl <em>Variable Decl</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Variable</em>'.
-	 * @see robotMlEcoreMetamodel.Variable
+	 * @return the meta object for class '<em>Variable Decl</em>'.
+	 * @see robotMlEcoreMetamodel.VariableDecl
 	 * @generated
 	 */
-	EClass getVariable();
+	EClass getVariableDecl();
 
 	/**
-	 * Returns the meta object for the attribute '{@link robotMlEcoreMetamodel.Variable#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link robotMlEcoreMetamodel.VariableDecl#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see robotMlEcoreMetamodel.Variable#getName()
-	 * @see #getVariable()
+	 * @see robotMlEcoreMetamodel.VariableDecl#getName()
+	 * @see #getVariableDecl()
 	 * @generated
 	 */
-	EAttribute getVariable_Name();
+	EAttribute getVariableDecl_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link robotMlEcoreMetamodel.Variable#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link robotMlEcoreMetamodel.VariableDecl#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see robotMlEcoreMetamodel.Variable#getType()
-	 * @see #getVariable()
+	 * @see robotMlEcoreMetamodel.VariableDecl#getType()
+	 * @see #getVariableDecl()
 	 * @generated
 	 */
-	EAttribute getVariable_Type();
+	EAttribute getVariableDecl_Type();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.VariableDecl#getValeur <em>Valeur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Valeur</em>'.
+	 * @see robotMlEcoreMetamodel.VariableDecl#getValeur()
+	 * @see #getVariableDecl()
+	 * @generated
+	 */
+	EReference getVariableDecl_Valeur();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Movement <em>Movement</em>}'.
@@ -1479,15 +1643,15 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EClass getControlStructure();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.ControlStructure#getBooleanexpression <em>Booleanexpression</em>}'.
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.ControlStructure#getCondition <em>Condition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Booleanexpression</em>'.
-	 * @see robotMlEcoreMetamodel.ControlStructure#getBooleanexpression()
+	 * @return the meta object for the containment reference list '<em>Condition</em>'.
+	 * @see robotMlEcoreMetamodel.ControlStructure#getCondition()
 	 * @see #getControlStructure()
 	 * @generated
 	 */
-	EReference getControlStructure_Booleanexpression();
+	EReference getControlStructure_Condition();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.If <em>If</em>}'.
@@ -1500,10 +1664,10 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EClass getIf();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.If#getElse <em>Else</em>}'.
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.If#getElse <em>Else</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Else</em>'.
+	 * @return the meta object for the containment reference '<em>Else</em>'.
 	 * @see robotMlEcoreMetamodel.If#getElse()
 	 * @see #getIf()
 	 * @generated
@@ -1511,10 +1675,10 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EReference getIf_Else();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.If#getThen <em>Then</em>}'.
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.If#getThen <em>Then</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Then</em>'.
+	 * @return the meta object for the containment reference '<em>Then</em>'.
 	 * @see robotMlEcoreMetamodel.If#getThen()
 	 * @see #getIf()
 	 * @generated
@@ -1553,16 +1717,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EClass getForward();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.RotateLeft <em>Rotate Left</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Rotate Left</em>'.
-	 * @see robotMlEcoreMetamodel.RotateLeft
-	 * @generated
-	 */
-	EClass getRotateLeft();
-
-	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Backward <em>Backward</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1571,16 +1725,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getBackward();
-
-	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.RotateRight <em>Rotate Right</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Rotate Right</em>'.
-	 * @see robotMlEcoreMetamodel.RotateRight
-	 * @generated
-	 */
-	EClass getRotateRight();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Right <em>Right</em>}'.
@@ -1601,16 +1745,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getLeft();
-
-	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Rotation <em>Rotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Rotation</em>'.
-	 * @see robotMlEcoreMetamodel.Rotation
-	 * @generated
-	 */
-	EClass getRotation();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.SetSpeed <em>Set Speed</em>}'.
@@ -1666,6 +1800,17 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EReference getVariableAssign_Variable();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.VariableAssign#getValeur <em>Valeur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Valeur</em>'.
+	 * @see robotMlEcoreMetamodel.VariableAssign#getValeur()
+	 * @see #getVariableAssign()
+	 * @generated
+	 */
+	EReference getVariableAssign_Valeur();
+
+	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Clock <em>Clock</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1718,15 +1863,15 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EReference getFunctionCall_Function();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.FunctionCall#getExpression <em>Expression</em>}'.
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.FunctionCall#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Expression</em>'.
-	 * @see robotMlEcoreMetamodel.FunctionCall#getExpression()
+	 * @return the meta object for the containment reference list '<em>Arguments</em>'.
+	 * @see robotMlEcoreMetamodel.FunctionCall#getArguments()
 	 * @see #getFunctionCall()
 	 * @generated
 	 */
-	EReference getFunctionCall_Expression();
+	EReference getFunctionCall_Arguments();
 
 	/**
 	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Parameter <em>Parameter</em>}'.
@@ -1824,84 +1969,277 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 	EClass getBooleanOPerator();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.LowerThan <em>Lower Than</em>}'.
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.ReturnExp <em>Return Exp</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Lower Than</em>'.
-	 * @see robotMlEcoreMetamodel.LowerThan
+	 * @return the meta object for class '<em>Return Exp</em>'.
+	 * @see robotMlEcoreMetamodel.ReturnExp
 	 * @generated
 	 */
-	EClass getLowerThan();
+	EClass getReturnExp();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.UpperThan <em>Upper Than</em>}'.
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.ReturnExp#getExpression <em>Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Upper Than</em>'.
-	 * @see robotMlEcoreMetamodel.UpperThan
+	 * @return the meta object for the containment reference '<em>Expression</em>'.
+	 * @see robotMlEcoreMetamodel.ReturnExp#getExpression()
+	 * @see #getReturnExp()
 	 * @generated
 	 */
-	EClass getUpperThan();
+	EReference getReturnExp_Expression();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.EqualTo <em>Equal To</em>}'.
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.ExpressionUnair <em>Expression Unair</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Equal To</em>'.
-	 * @see robotMlEcoreMetamodel.EqualTo
+	 * @return the meta object for class '<em>Expression Unair</em>'.
+	 * @see robotMlEcoreMetamodel.ExpressionUnair
 	 * @generated
 	 */
-	EClass getEqualTo();
+	EClass getExpressionUnair();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Add <em>Add</em>}'.
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.FunctionCallExpr <em>Function Call Expr</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Add</em>'.
-	 * @see robotMlEcoreMetamodel.Add
+	 * @return the meta object for class '<em>Function Call Expr</em>'.
+	 * @see robotMlEcoreMetamodel.FunctionCallExpr
 	 * @generated
 	 */
-	EClass getAdd();
+	EClass getFunctionCallExpr();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Multiplication <em>Multiplication</em>}'.
+	 * Returns the meta object for the reference '{@link robotMlEcoreMetamodel.FunctionCallExpr#getFunction <em>Function</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Multiplication</em>'.
-	 * @see robotMlEcoreMetamodel.Multiplication
+	 * @return the meta object for the reference '<em>Function</em>'.
+	 * @see robotMlEcoreMetamodel.FunctionCallExpr#getFunction()
+	 * @see #getFunctionCallExpr()
 	 * @generated
 	 */
-	EClass getMultiplication();
+	EReference getFunctionCallExpr_Function();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.NewEClass74 <em>New EClass74</em>}'.
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.FunctionCallExpr#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>New EClass74</em>'.
-	 * @see robotMlEcoreMetamodel.NewEClass74
+	 * @return the meta object for the containment reference list '<em>Arguments</em>'.
+	 * @see robotMlEcoreMetamodel.FunctionCallExpr#getArguments()
+	 * @see #getFunctionCallExpr()
 	 * @generated
 	 */
-	EClass getNewEClass74();
+	EReference getFunctionCallExpr_Arguments();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Sub <em>Sub</em>}'.
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.VariableCallExpr <em>Variable Call Expr</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Sub</em>'.
-	 * @see robotMlEcoreMetamodel.Sub
+	 * @return the meta object for class '<em>Variable Call Expr</em>'.
+	 * @see robotMlEcoreMetamodel.VariableCallExpr
 	 * @generated
 	 */
-	EClass getSub();
+	EClass getVariableCallExpr();
 
 	/**
-	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Division <em>Division</em>}'.
+	 * Returns the meta object for the reference '{@link robotMlEcoreMetamodel.VariableCallExpr#getVariable <em>Variable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Division</em>'.
-	 * @see robotMlEcoreMetamodel.Division
+	 * @return the meta object for the reference '<em>Variable</em>'.
+	 * @see robotMlEcoreMetamodel.VariableCallExpr#getVariable()
+	 * @see #getVariableCallExpr()
 	 * @generated
 	 */
-	EClass getDivision();
+	EReference getVariableCallExpr_Variable();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.AddSubExpr <em>Add Sub Expr</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Add Sub Expr</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubExpr
+	 * @generated
+	 */
+	EClass getAddSubExpr();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.AddSubExpr#getLeft <em>Left</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Left</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubExpr#getLeft()
+	 * @see #getAddSubExpr()
+	 * @generated
+	 */
+	EReference getAddSubExpr_Left();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.AddSubExpr#getOperator <em>Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Operator</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubExpr#getOperator()
+	 * @see #getAddSubExpr()
+	 * @generated
+	 */
+	EReference getAddSubExpr_Operator();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.AddSubExpr#getRight <em>Right</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Right</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubExpr#getRight()
+	 * @see #getAddSubExpr()
+	 * @generated
+	 */
+	EReference getAddSubExpr_Right();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.MultiDivExpr <em>Multi Div Expr</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Multi Div Expr</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivExpr
+	 * @generated
+	 */
+	EClass getMultiDivExpr();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link robotMlEcoreMetamodel.MultiDivExpr#getRight <em>Right</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Right</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivExpr#getRight()
+	 * @see #getMultiDivExpr()
+	 * @generated
+	 */
+	EReference getMultiDivExpr_Right();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.MultiDivExpr#getLeft <em>Left</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Left</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivExpr#getLeft()
+	 * @see #getMultiDivExpr()
+	 * @generated
+	 */
+	EReference getMultiDivExpr_Left();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.AddSubOperator <em>Add Sub Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Add Sub Operator</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubOperator
+	 * @generated
+	 */
+	EClass getAddSubOperator();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.MultiDivOperator <em>Multi Div Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Multi Div Operator</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivOperator
+	 * @generated
+	 */
+	EClass getMultiDivOperator();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.BaseExpr <em>Base Expr</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Base Expr</em>'.
+	 * @see robotMlEcoreMetamodel.BaseExpr
+	 * @generated
+	 */
+	EClass getBaseExpr();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.GetSensors <em>Get Sensors</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Get Sensors</em>'.
+	 * @see robotMlEcoreMetamodel.GetSensors
+	 * @generated
+	 */
+	EClass getGetSensors();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.Value <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Value</em>'.
+	 * @see robotMlEcoreMetamodel.Value
+	 * @generated
+	 */
+	EClass getValue();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.MultiDivRightExp <em>Multi Div Right Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Multi Div Right Exp</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivRightExp
+	 * @generated
+	 */
+	EClass getMultiDivRightExp();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.MultiDivRightExp#getOperator <em>Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Operator</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivRightExp#getOperator()
+	 * @see #getMultiDivRightExp()
+	 * @generated
+	 */
+	EReference getMultiDivRightExp_Operator();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.MultiDivRightExp#getRight <em>Right</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Right</em>'.
+	 * @see robotMlEcoreMetamodel.MultiDivRightExp#getRight()
+	 * @see #getMultiDivRightExp()
+	 * @generated
+	 */
+	EReference getMultiDivRightExp_Right();
+
+	/**
+	 * Returns the meta object for class '{@link robotMlEcoreMetamodel.AddSubbRightExp <em>Add Subb Right Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Add Subb Right Exp</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubbRightExp
+	 * @generated
+	 */
+	EClass getAddSubbRightExp();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.AddSubbRightExp#getOperator <em>Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Operator</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubbRightExp#getOperator()
+	 * @see #getAddSubbRightExp()
+	 * @generated
+	 */
+	EReference getAddSubbRightExp_Operator();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link robotMlEcoreMetamodel.AddSubbRightExp#getRight <em>Right</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Right</em>'.
+	 * @see robotMlEcoreMetamodel.AddSubbRightExp#getRight()
+	 * @see #getAddSubbRightExp()
+	 * @generated
+	 */
+	EReference getAddSubbRightExp_Right();
 
 	/**
 	 * Returns the meta object for enum '{@link robotMlEcoreMetamodel.Type <em>Type</em>}'.
@@ -1983,7 +2321,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EAttribute FUNCTION__NAME = eINSTANCE.getFunction_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Returntype</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Returntype</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2005,16 +2343,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FUNCTION__PARAMETER = eINSTANCE.getFunction_Parameter();
-
-		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.NewEClass45Impl <em>New EClass45</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.NewEClass45Impl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getNewEClass45()
-		 * @generated
-		 */
-		EClass NEW_ECLASS45 = eINSTANCE.getNewEClass45();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ReturnTypeImpl <em>Return Type</em>}' class.
@@ -2045,14 +2373,14 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EClass STATEMENT = eINSTANCE.getStatement();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.VariableImpl <em>Variable</em>}' class.
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.VariableDeclImpl <em>Variable Decl</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.VariableImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariable()
+		 * @see robotMlEcoreMetamodel.impl.VariableDeclImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariableDecl()
 		 * @generated
 		 */
-		EClass VARIABLE = eINSTANCE.getVariable();
+		EClass VARIABLE_DECL = eINSTANCE.getVariableDecl();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -2060,7 +2388,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute VARIABLE__NAME = eINSTANCE.getVariable_Name();
+		EAttribute VARIABLE_DECL__NAME = eINSTANCE.getVariableDecl_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
@@ -2068,7 +2396,15 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute VARIABLE__TYPE = eINSTANCE.getVariable_Type();
+		EAttribute VARIABLE_DECL__TYPE = eINSTANCE.getVariableDecl_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Valeur</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VARIABLE_DECL__VALEUR = eINSTANCE.getVariableDecl_Valeur();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.MovementImpl <em>Movement</em>}' class.
@@ -2099,12 +2435,12 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EClass CONTROL_STRUCTURE = eINSTANCE.getControlStructure();
 
 		/**
-		 * The meta object literal for the '<em><b>Booleanexpression</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Condition</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONTROL_STRUCTURE__BOOLEANEXPRESSION = eINSTANCE.getControlStructure_Booleanexpression();
+		EReference CONTROL_STRUCTURE__CONDITION = eINSTANCE.getControlStructure_Condition();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.IfImpl <em>If</em>}' class.
@@ -2117,7 +2453,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EClass IF = eINSTANCE.getIf();
 
 		/**
-		 * The meta object literal for the '<em><b>Else</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Else</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2125,7 +2461,7 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EReference IF__ELSE = eINSTANCE.getIf_Else();
 
 		/**
-		 * The meta object literal for the '<em><b>Then</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Then</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2161,16 +2497,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EClass FORWARD = eINSTANCE.getForward();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.RotateLeftImpl <em>Rotate Left</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.RotateLeftImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotateLeft()
-		 * @generated
-		 */
-		EClass ROTATE_LEFT = eINSTANCE.getRotateLeft();
-
-		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.BackwardImpl <em>Backward</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2179,16 +2505,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass BACKWARD = eINSTANCE.getBackward();
-
-		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.RotateRightImpl <em>Rotate Right</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.RotateRightImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotateRight()
-		 * @generated
-		 */
-		EClass ROTATE_RIGHT = eINSTANCE.getRotateRight();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.RightImpl <em>Right</em>}' class.
@@ -2209,16 +2525,6 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass LEFT = eINSTANCE.getLeft();
-
-		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.RotationImpl <em>Rotation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.RotationImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getRotation()
-		 * @generated
-		 */
-		EClass ROTATION = eINSTANCE.getRotation();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.SetSpeedImpl <em>Set Speed</em>}' class.
@@ -2263,6 +2569,14 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference VARIABLE_ASSIGN__VARIABLE = eINSTANCE.getVariableAssign_Variable();
+
+		/**
+		 * The meta object literal for the '<em><b>Valeur</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VARIABLE_ASSIGN__VALEUR = eINSTANCE.getVariableAssign_Valeur();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ClockImpl <em>Clock</em>}' class.
@@ -2311,12 +2625,12 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EReference FUNCTION_CALL__FUNCTION = eINSTANCE.getFunctionCall_Function();
 
 		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Arguments</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FUNCTION_CALL__EXPRESSION = eINSTANCE.getFunctionCall_Expression();
+		EReference FUNCTION_CALL__ARGUMENTS = eINSTANCE.getFunctionCall_Arguments();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ParameterImpl <em>Parameter</em>}' class.
@@ -2399,84 +2713,238 @@ public interface RobotMlEcoreMetamodelPackage extends EPackage {
 		EClass BOOLEAN_OPERATOR = eINSTANCE.getBooleanOPerator();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.LowerThanImpl <em>Lower Than</em>}' class.
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ReturnExpImpl <em>Return Exp</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.LowerThanImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getLowerThan()
+		 * @see robotMlEcoreMetamodel.impl.ReturnExpImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getReturnExp()
 		 * @generated
 		 */
-		EClass LOWER_THAN = eINSTANCE.getLowerThan();
+		EClass RETURN_EXP = eINSTANCE.getReturnExp();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.UpperThanImpl <em>Upper Than</em>}' class.
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.UpperThanImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getUpperThan()
 		 * @generated
 		 */
-		EClass UPPER_THAN = eINSTANCE.getUpperThan();
+		EReference RETURN_EXP__EXPRESSION = eINSTANCE.getReturnExp_Expression();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.EqualToImpl <em>Equal To</em>}' class.
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ExpressionUnairImpl <em>Expression Unair</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.EqualToImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getEqualTo()
+		 * @see robotMlEcoreMetamodel.impl.ExpressionUnairImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getExpressionUnair()
 		 * @generated
 		 */
-		EClass EQUAL_TO = eINSTANCE.getEqualTo();
+		EClass EXPRESSION_UNAIR = eINSTANCE.getExpressionUnair();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.AddImpl <em>Add</em>}' class.
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.FunctionCallExprImpl <em>Function Call Expr</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.AddImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAdd()
+		 * @see robotMlEcoreMetamodel.impl.FunctionCallExprImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getFunctionCallExpr()
 		 * @generated
 		 */
-		EClass ADD = eINSTANCE.getAdd();
+		EClass FUNCTION_CALL_EXPR = eINSTANCE.getFunctionCallExpr();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.MultiplicationImpl <em>Multiplication</em>}' class.
+		 * The meta object literal for the '<em><b>Function</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.MultiplicationImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiplication()
 		 * @generated
 		 */
-		EClass MULTIPLICATION = eINSTANCE.getMultiplication();
+		EReference FUNCTION_CALL_EXPR__FUNCTION = eINSTANCE.getFunctionCallExpr_Function();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.NewEClass74Impl <em>New EClass74</em>}' class.
+		 * The meta object literal for the '<em><b>Arguments</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.NewEClass74Impl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getNewEClass74()
 		 * @generated
 		 */
-		EClass NEW_ECLASS74 = eINSTANCE.getNewEClass74();
+		EReference FUNCTION_CALL_EXPR__ARGUMENTS = eINSTANCE.getFunctionCallExpr_Arguments();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.SubImpl <em>Sub</em>}' class.
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.VariableCallExprImpl <em>Variable Call Expr</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.SubImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getSub()
+		 * @see robotMlEcoreMetamodel.impl.VariableCallExprImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getVariableCallExpr()
 		 * @generated
 		 */
-		EClass SUB = eINSTANCE.getSub();
+		EClass VARIABLE_CALL_EXPR = eINSTANCE.getVariableCallExpr();
 
 		/**
-		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.DivisionImpl <em>Division</em>}' class.
+		 * The meta object literal for the '<em><b>Variable</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see robotMlEcoreMetamodel.impl.DivisionImpl
-		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getDivision()
 		 * @generated
 		 */
-		EClass DIVISION = eINSTANCE.getDivision();
+		EReference VARIABLE_CALL_EXPR__VARIABLE = eINSTANCE.getVariableCallExpr_Variable();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.AddSubExprImpl <em>Add Sub Expr</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.AddSubExprImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubExpr()
+		 * @generated
+		 */
+		EClass ADD_SUB_EXPR = eINSTANCE.getAddSubExpr();
+
+		/**
+		 * The meta object literal for the '<em><b>Left</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADD_SUB_EXPR__LEFT = eINSTANCE.getAddSubExpr_Left();
+
+		/**
+		 * The meta object literal for the '<em><b>Operator</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADD_SUB_EXPR__OPERATOR = eINSTANCE.getAddSubExpr_Operator();
+
+		/**
+		 * The meta object literal for the '<em><b>Right</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADD_SUB_EXPR__RIGHT = eINSTANCE.getAddSubExpr_Right();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.MultiDivExprImpl <em>Multi Div Expr</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.MultiDivExprImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivExpr()
+		 * @generated
+		 */
+		EClass MULTI_DIV_EXPR = eINSTANCE.getMultiDivExpr();
+
+		/**
+		 * The meta object literal for the '<em><b>Right</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_DIV_EXPR__RIGHT = eINSTANCE.getMultiDivExpr_Right();
+
+		/**
+		 * The meta object literal for the '<em><b>Left</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_DIV_EXPR__LEFT = eINSTANCE.getMultiDivExpr_Left();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.AddSubOperatorImpl <em>Add Sub Operator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.AddSubOperatorImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubOperator()
+		 * @generated
+		 */
+		EClass ADD_SUB_OPERATOR = eINSTANCE.getAddSubOperator();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.MultiDivOperatorImpl <em>Multi Div Operator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.MultiDivOperatorImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivOperator()
+		 * @generated
+		 */
+		EClass MULTI_DIV_OPERATOR = eINSTANCE.getMultiDivOperator();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.BaseExprImpl <em>Base Expr</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.BaseExprImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getBaseExpr()
+		 * @generated
+		 */
+		EClass BASE_EXPR = eINSTANCE.getBaseExpr();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.GetSensorsImpl <em>Get Sensors</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.GetSensorsImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getGetSensors()
+		 * @generated
+		 */
+		EClass GET_SENSORS = eINSTANCE.getGetSensors();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.ValueImpl <em>Value</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.ValueImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getValue()
+		 * @generated
+		 */
+		EClass VALUE = eINSTANCE.getValue();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.MultiDivRightExpImpl <em>Multi Div Right Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.MultiDivRightExpImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getMultiDivRightExp()
+		 * @generated
+		 */
+		EClass MULTI_DIV_RIGHT_EXP = eINSTANCE.getMultiDivRightExp();
+
+		/**
+		 * The meta object literal for the '<em><b>Operator</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_DIV_RIGHT_EXP__OPERATOR = eINSTANCE.getMultiDivRightExp_Operator();
+
+		/**
+		 * The meta object literal for the '<em><b>Right</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_DIV_RIGHT_EXP__RIGHT = eINSTANCE.getMultiDivRightExp_Right();
+
+		/**
+		 * The meta object literal for the '{@link robotMlEcoreMetamodel.impl.AddSubbRightExpImpl <em>Add Subb Right Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see robotMlEcoreMetamodel.impl.AddSubbRightExpImpl
+		 * @see robotMlEcoreMetamodel.impl.RobotMlEcoreMetamodelPackageImpl#getAddSubbRightExp()
+		 * @generated
+		 */
+		EClass ADD_SUBB_RIGHT_EXP = eINSTANCE.getAddSubbRightExp();
+
+		/**
+		 * The meta object literal for the '<em><b>Operator</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADD_SUBB_RIGHT_EXP__OPERATOR = eINSTANCE.getAddSubbRightExp_Operator();
+
+		/**
+		 * The meta object literal for the '<em><b>Right</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADD_SUBB_RIGHT_EXP__RIGHT = eINSTANCE.getAddSubbRightExp_Right();
 
 		/**
 		 * The meta object literal for the '{@link robotMlEcoreMetamodel.Type <em>Type</em>}' enum.

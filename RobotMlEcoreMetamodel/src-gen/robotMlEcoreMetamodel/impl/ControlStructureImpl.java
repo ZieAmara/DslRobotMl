@@ -26,21 +26,21 @@ import robotMlEcoreMetamodel.RobotMlEcoreMetamodelPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link robotMlEcoreMetamodel.impl.ControlStructureImpl#getBooleanexpression <em>Booleanexpression</em>}</li>
+ *   <li>{@link robotMlEcoreMetamodel.impl.ControlStructureImpl#getCondition <em>Condition</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class ControlStructureImpl extends StatementImpl implements ControlStructure {
 	/**
-	 * The cached value of the '{@link #getBooleanexpression() <em>Booleanexpression</em>}' containment reference list.
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBooleanexpression()
+	 * @see #getCondition()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<BooleanExpr> booleanexpression;
+	protected EList<BooleanExpr> condition;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,12 +67,12 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public EList<BooleanExpr> getBooleanexpression() {
-		if (booleanexpression == null) {
-			booleanexpression = new EObjectContainmentEList<BooleanExpr>(BooleanExpr.class, this,
-					RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION);
+	public EList<BooleanExpr> getCondition() {
+		if (condition == null) {
+			condition = new EObjectContainmentEList<BooleanExpr>(BooleanExpr.class, this,
+					RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION);
 		}
-		return booleanexpression;
+		return condition;
 	}
 
 	/**
@@ -83,8 +83,8 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION:
-			return ((InternalEList<?>) getBooleanexpression()).basicRemove(otherEnd, msgs);
+		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION:
+			return ((InternalEList<?>) getCondition()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -97,8 +97,8 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION:
-			return getBooleanexpression();
+		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION:
+			return getCondition();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -112,9 +112,9 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION:
-			getBooleanexpression().clear();
-			getBooleanexpression().addAll((Collection<? extends BooleanExpr>) newValue);
+		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION:
+			getCondition().clear();
+			getCondition().addAll((Collection<? extends BooleanExpr>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -128,8 +128,8 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION:
-			getBooleanexpression().clear();
+		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION:
+			getCondition().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -143,8 +143,8 @@ public abstract class ControlStructureImpl extends StatementImpl implements Cont
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__BOOLEANEXPRESSION:
-			return booleanexpression != null && !booleanexpression.isEmpty();
+		case RobotMlEcoreMetamodelPackage.CONTROL_STRUCTURE__CONDITION:
+			return condition != null && !condition.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
